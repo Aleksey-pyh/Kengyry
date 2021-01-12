@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueBold.eot');
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'),
+        url('./fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BebasNeueBold.woff2') format('woff2'),
+        url('./fonts/BebasNeueBold.woff') format('woff'),
+        url('./fonts/BebasNeueBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeue-Thin.eot');
+    src: local('Bebas Neue Thin'), local('BebasNeue-Thin'),
+        url('./fonts/BebasNeue-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BebasNeue-Thin.woff2') format('woff2'),
+        url('./fonts/BebasNeue-Thin.woff') format('woff'),
+        url('./fonts/BebasNeue-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueLight.eot');
+    src: local('Bebas Neue Light'), local('BebasNeueLight'),
+        url('./fonts/BebasNeueLight.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BebasNeueLight.woff2') format('woff2'),
+        url('./fonts/BebasNeueLight.woff') format('woff'),
+        url('./fonts/BebasNeueLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('BebasNeueBook.eot');
+    src: local('Bebas Neue Book'), local('BebasNeueBook'),
+        url('./fonts/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BebasNeueBook.woff2') format('woff2'),
+        url('./fonts/BebasNeueBook.woff') format('woff'),
+        url('./fonts/BebasNeueBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueRegular.eot');
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
+        url('./fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BebasNeueRegular.woff2') format('woff2'),
+        url('./fonts/BebasNeueRegular.woff') format('woff'),
+        url('./fonts/BebasNeueRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Bebas Neue',sans-serif;
+    text-transform: uppercase;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+nav{
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    font-size: 19px;
+    line-height: 23px;
+    color: #7A1429;
+    list-style-type: none;
+    cursor: pointer;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all .3s;
+    text-transform: uppercase;
+}
+nav ul li:hover{
+    color: white;
+}
+nav ul li::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #7A1429;
+    transform: scale(0);
+    transition: all .3s;
+}
+nav ul li:hover::after{
+    transform: none;
+}
+nav ul li:not(:last-child){
+    margin-right: 80px;
+}
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: #7A1429;
+    margin: 36px 0 21px;
+}
+.likeH2{
+    font-size: 31px;
+    line-height: 37px;
+    text-align: center;
+    color: #151515;
+    text-transform: uppercase;
+}
+.absolutePic{
+    position: absolute;
+    top: 253px;
+    left:calc(50% - 197px);
+}
+.absolutePic img{
+    width: 394px;
+}
+.block p{
+    max-width: 285px;
+    font-size: 22px;
+    line-height: 147.5%;
+    text-align: center;
+    color: #151515;
+}
+.textContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px;
+}
+.center{
+    font-size: 22px;
+    line-height: 147.5%;
+    text-align: center;
+    color: #151515;
+    max-width: 496px;
+    margin: 165px auto 100px;
+}

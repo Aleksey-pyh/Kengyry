@@ -1,0 +1,110 @@
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 31px;
+    color: #7A1429;
+    text-transform: uppercase;
+    margin: 50px 0 30px;
+}
+.flexTwoColonum{
+    display: flex;
+    justify-content: space-between;
+}
+.colonum{
+    max-width: 50%;
+    width: 50%;
+}
+.colonum img{
+    width: 100%;
+    max-width: 100%;
+}
+.likeTitle{
+    font-size: 23px;
+    line-height: 36px;
+    color: #151515;
+}
+.red{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #7A1429;
+}
+.subsccribe{
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 20px 31px;
+    background-color: #7A1429;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    animation: scaleBut 2s linear infinite;
+}
+.slidersLeft{
+    padding-left: 20px;
+}
+.slideContainer{
+    position: relative;
+}
+.slideLeft p{
+    font-size: 18px;
+    line-height: 189.17%;
+    color: #151515;
+    margin: 3px 0;
+}
+.leftDots{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 6px;
+}
+.leftDots span{
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #7A1429;
+    border-radius: 100%;
+    margin: 18px 0;
+}
+@keyframes scaleBut{
+    0%{
+        padding: 20px 31px;
+    }
+    25%{
+        padding: 25px 36px;
+    }
+    50%{
+        padding: 28px 41px;
+    }
+    75%{
+        padding: 25px 36px;
+    }
+    100%{
+        padding: 20px 31px;
+    }
+}
+.wereBuy{
+    font-size: 16px;
+    line-height: 159.69%;
+    text-align: center;
+    color: #151515;
+}
+.wereBuy a{
+    font-size: 16px;
+    color: #151515;
+    text-decoration: none;
+    font-weight: bold;
+}
+.wereBuy a:hover{
+    color: #7A1429;
+}
+.subscribeContainer{
+    height: 300px;
+}
