@@ -9,10 +9,10 @@
 //   else{mask.classList.add('show');
 //   elem.textContent = 'Свернуть';}
 // }
-// $('.slidersRigth').slick({
-//   prevArrow: $('.prev_rigth'),
-//   nextArrow: $('.next_rigth')
-// });
+$('.sliderChapter').slick({
+  prevArrow: $('.prev'),
+  nextArrow: $('.next')
+});
 $('.slidersLeft').slick({
   dots:false,
   arrow:false,
@@ -22,7 +22,16 @@ $('.slidersLeft').slick({
   vertical:true,
   slidesToShow: 5,
   slidesToScroll: 1,
-
+});
+$('.dateSlider').slick({
+  dots:false,
+  arrow:false,
+  speed:1300,
+  autoplay: true,
+  autoplaySpeed: 1300,
+  vertical:true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
 });
 
 // $('#catalog').on('click', function(e){
