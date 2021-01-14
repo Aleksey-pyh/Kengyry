@@ -15,7 +15,7 @@ $('.sliderChapter').slick({
 });
 $('.slidersLeft').slick({
   dots:false,
-  arrow:false,
+  arrows:false,
   speed:1300,
   autoplay: true,
   autoplaySpeed: 1300,
@@ -25,7 +25,7 @@ $('.slidersLeft').slick({
 });
 $('.dateSlider').slick({
   dots:false,
-  arrow:false,
+  arrows:false,
   speed:1300,
   autoplay: true,
   autoplaySpeed: 1300,

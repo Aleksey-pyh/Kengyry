@@ -166,3 +166,53 @@ h1{
     max-width: 496px;
     margin: 165px auto 100px;
 }
+@media(max-width:1020px){
+    .absolutePic{
+        position: relative;
+        top: 33px;
+    }
+    .center{
+        margin: 27px auto 37px;
+    }
+    .textContainer{
+        margin-top: 26px;
+    }
+    
+}
+@media(max-width:636px){
+    .textContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .textContainer p {
+        max-width: 100%;
+        padding: 15px 30px;
+    }
+    .center {
+        padding: 27px 30px 37px;
+        max-width: 100%;
+        margin: 0;
+    }
+}
+@media(max-width:576px){
+    nav ul li:not(:last-child){
+        margin-right: 15px;
+    }
+    h1{
+        font-size: 34px;
+        margin: 22px 0 13px;
+    }
+    .likeH2{
+        font-size: 26px;
+    }
+    .block p,.center{
+        font-size: 18px;
+    }
+}
+@media(max-width:380px){
+    nav ul li{
+        width: 55px;
+        height: 55px;
+        font-size: 14px;
+    }
+}
