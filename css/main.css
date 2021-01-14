@@ -96,6 +96,7 @@ h2{
     line-height: 159.69%;
     text-align: center;
     color: #151515;
+    margin-bottom: 20px;
 }
 .wereBuy a{
     font-size: 16px;
@@ -493,6 +494,13 @@ h2{
     .lineWithArrow{
         align-items: flex-start;
     }
+    .text{
+        max-width: 100%;
+    }
+    .dateSlider{
+        margin-left: auto;
+        max-width: 450px;
+    }
 }
 @media(max-width:1020px){
     .flexTwoColonum .__left{
@@ -638,4 +646,13 @@ h2{
         display: block;
         font-size: 22px;
     }
+    .dateSlider{
+        max-width: 100%;
+    }
+    .hidden{
+        min-height: 60px;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
 }

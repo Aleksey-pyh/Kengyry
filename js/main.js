@@ -26,9 +26,9 @@ $('.slidersLeft').slick({
 $('.dateSlider').slick({
   dots:false,
   arrows:false,
-  speed:2300,
+  speed:1000,
   autoplay: true,
-  autoplaySpeed: 2300,
+  autoplaySpeed: 1000,
   vertical:true,
   slidesToShow: 5,
   slidesToScroll: 1,
