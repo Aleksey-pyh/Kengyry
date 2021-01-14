@@ -41,6 +41,7 @@ h2{
     border-radius: 5px;
     text-transform: uppercase;
     margin-top: 35px;
+    cursor: pointer;
     animation: scaleBut 2s linear infinite;
 }
 .slidersLeft{
@@ -293,10 +294,13 @@ h2{
     position: relative;
 }
 .picAbout{
-    max-width: 50%;
+    max-width: 49%;
+}
+.picAbout img{
+    max-width: 100%;
 }
 .textAbout{
-    max-width: 50%;
+    max-width: 49%;
 }
 .picAbout::after {
     width: 1538px;
@@ -359,6 +363,7 @@ h2{
     line-height: 183.69%;
     color: #000000;
     margin-right: 30px;
+    min-height: 80px;
 }
 .grey{
     font-size: 20px;
@@ -474,6 +479,21 @@ h2{
         transform: translateY(0);
     }
 }
+@media(max-width:1260px){
+    .publishDate{
+        bottom: calc(50% - 63px);
+    }
+}
+@media(max-width:1150px){
+    .container.__rigth{
+        max-width: calc(100% - 15px);
+        margin-left: 0;
+        padding-left: 15px;
+    }
+    .lineWithArrow{
+        align-items: flex-start;
+    }
+}
 @media(max-width:1020px){
     .flexTwoColonum .__left{
         max-width: 70%;
@@ -483,6 +503,41 @@ h2{
         max-width: 30%;
         width: 30%;
         align-self: center;
+    }
+}
+@media(max-width:920px){
+    .flexLeft{
+        max-width: 70%;
+        width: 70%;
+    }
+    .flexRigth{
+        max-width: 30%;
+        width: 30%;
+    }
+    .publishDate{
+        left: calc(70% - 63px);
+    }
+    .sliderChapter .desc{
+        max-width: calc(100% - 63px);
+    }
+    .flexRigth img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: left;
+    }
+    .arrowContainer{
+        left: calc(70% - 160px);
+    }
+    .lineWithArrow{
+        align-items: flex-end;
+    }
+    .counts {
+        font-size: 14px;
+        margin-left: 0;
+        position: absolute;
+        bottom: 0;
+        left: calc(70% - 112px);
     }
 }
 @media(max-width:786px){
@@ -500,6 +555,68 @@ h2{
         align-self: center;
         order: -1;
     }
+    .picAbout {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .textAbout{
+        margin-top: 20px;
+        max-width: 100%;
+    }
+    .textFlex{
+        margin-top: 0;
+    }
+    .textFlex p{
+        margin: 20px 0;
+        max-width: 100%;
+    }
+}
+@media(max-width:700px){
+    .flexContainer{
+        flex-direction: column;
+    }
+    .flexLeft{
+        max-width: 100%;
+        width: 100%;
+    }
+    .chapter{
+        display: inline-block;
+        font-size: 70px;
+        margin-right: 10px;
+        line-height: normal;
+    }
+    .sliderChapter .desc{
+        margin: 20px 0;
+    }
+    .chapterName{
+        display: inline-block;
+    }
+    .flexRigth {
+        max-width: 55%;
+        width: 55%;
+        margin-left: auto;
+        margin-top: 25px;
+    }
+    .publishDate{
+        bottom: 0;
+        left: 0;
+    }
+    .arrowContainer{
+        left: 0;
+        top: 293px;
+    }
+    .counts {
+        left: 46px;
+        top: 289px;
+        bottom: auto;
+    }
+    .sliderChapter .desc{
+        max-width: 100%;
+        height: 88px;
+    }
 }
 @media(max-width:600px){
     .slideLeft p{
@@ -514,5 +631,11 @@ h2{
     }
     .subsccribe{
         font-size: 16px;
+    }
+}
+@media(max-width:550px){
+    .chapter{
+        display: block;
+        font-size: 22px;
     }
 }
